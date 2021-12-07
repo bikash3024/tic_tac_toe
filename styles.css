@@ -1,0 +1,31 @@
+header{
+    text-align: center;
+}
+
+.container{
+    width: 170px;
+    padding: 5px 0 5px 0;
+    background-color: brown;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    grid-gap: 5px;
+    align-content: center;
+    justify-content: center;
+}
+.cell{
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:400px) {
+    .container{
+        width: 320px;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+
+    }
+}

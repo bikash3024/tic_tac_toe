@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Tic tac toe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aleo&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* HTML5 display-role reset for older browsers */
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        /* real css from here */
+
+        *,
+        html {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --main-theme: #494949;
+            --honey-yellow: #fde023;
+            --gray: #c8c9cb;
+            --light-grey: rgb(185, 185, 185);
+            --slate: #8892b0;
+            --light-slate: #a8b2d1;
+            --lightest-slate: #ccd6f6;
+            --font-text: 'Montserrat', Arial, sans-serif;
+            --font-headings: 'Aleo', "Times New Roman", Times, serif;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <header>
+        <h3>
+            A simple Tic tac toe game
+        </h3>
+
+    </header>
+    <main class="main">
+        <div class="mainContainer">
+            <div class="container">
+                <div class="cell" data-id="0"></div>
+                <div class="cell" data-id="1"></div>
+                <div class="cell" data-id="2"></div>
+                <div class="cell" data-id="3"></div>
+                <div class="cell" data-id="4"></div>
+                <div class="cell" data-id="5"></div>
+                <div class="cell" data-id="6"></div>
+                <div class="cell" data-id="7"></div>
+                <div class="cell" data-id="8"></div>
+                
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+
+
+
+
+    </footer>
+
+
+</body>
+<script src="logic.js"></script>
+
+</html>
