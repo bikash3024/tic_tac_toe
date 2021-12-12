@@ -1,3 +1,4 @@
+
 header{
     text-align: center;
 }
@@ -19,6 +20,45 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.startScreen{
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    padding-top: 20px;
+}
+.playerContainer{
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 1);
+    padding-top: 20px;
+    text-align: center;
+}
+.displayNone{
+    display: none;
+}
+.player1,.player2{
+    padding-top: 10px;
+    text-align: center;
+}
+.playerIcon{
+    margin: 0 auto;
+    display: block;
+    width: 30px;
+    max-width: 30px;
+    padding-bottom: 20px;
+}
+.submitButton {
+    margin-top: 20px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 20px 25% 20px 25%;
+    text-align: center;
 }
 
 @media screen and (min-width:400px) {
