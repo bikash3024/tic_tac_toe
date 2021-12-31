@@ -94,29 +94,35 @@
 
 <body>
     <header>
-        <h3>
+        <h3 >
             A simple Tic tac toe game
+        </h3>
+        <h2 id="headline">
+
         </h3>
 
     </header>
     <main class="main">
-        <div class="startScreen">
+        <!-- <div class="startScreen">
             <div class="playerContainer">
                 <p>Enter your names to start the game</p>
-                <div class="player1">
-                    <p>Player 1</p><img class="playerIcon" src="img/playerIcon.png">
-                    <input id="player1Name" placeholder="Enter your name" type="text"></input>
-                    <button class="submitButton">Submit</button>
+
+                <div class="player2 visibilityOff">
+                    <p class="playerTitle">Player 2</p><img class="playerIcon"
+                        src="https://img.icons8.com/color/96/000000/player-male.png">
+                    <input class="inputName" id="player2Name" placeholder="Enter your name" type="text"></input>
+                    <button class="submitButton" id="submit2">Submit</button>
                 </div>
-                <div class="player2 displayNone">
-                    <p>Player 2</p><img class="playerIcon" src="img/playerIcon.png">
-                    <input id="player2Name" placeholder="Enter your name" type="text"></input>
-                    <button class="submitButton">Submit</button>
+                <div class="player1">
+                    <p class="playerTitle">Player 1</p><img class="playerIcon"
+                        src="https://img.icons8.com/color/96/000000/player-male.png">
+                    <input class="inputName" id="player1Name" placeholder="Enter your name" type="text"></input>
+                    <button class="submitButton" id="submit1">Submit</button>
                 </div>
 
             </div>
-        </div>
-        </div>
+        </div> -->
+
         <div class="mainContainer">
             <div class="container" id="gameBoard">
                 <div class="cell" data-id="0"></div>
@@ -131,6 +137,19 @@
 
             </div>
         </div>
+        <div class="scoreContainer">
+            <div class="playerScoreContainer" >
+
+                <p id="player1ScoreHead">Player 1 Score</p>
+                <p class="playerScore" id="player1Score">0</p>
+            </div>
+            <div class="playerScoreContainer" >
+
+                <p id="player2ScoreHead">Player 2 Score</p>
+                <p class="playerScore" id="player2Score">0</p>
+            </div>
+        </div>
+        <button  id="resetScore">Reset Score</button>
 
 
     </main>

@@ -20,10 +20,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+
 .startScreen{
     margin: 0 auto;
-    top: 0;
+    top: 50px;
     width: 100%;
     position: absolute;
     height:100%;
@@ -33,17 +35,33 @@ header{
 }
 .playerContainer{
     width: 60%;
+    position: relative;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 1);
+    height: 50vh;
     padding-top: 20px;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
 }
 .displayNone{
     display: none;
 }
+.visibilityOff{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1s, opacity 1s linear;
+}
+.visibilityOn{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+}   
 .player1,.player2{
+    position: absolute;
+    width: 100%;
     padding-top: 10px;
     text-align: center;
+    
 }
 .playerIcon{
     margin: 0 auto;
@@ -52,6 +70,12 @@ header{
     max-width: 30px;
     padding-bottom: 20px;
 }
+.playerTitle{
+    padding-bottom: 5px;
+}
+.inputName{
+    width: 50%;
+}
 .submitButton {
     margin-top: 20px;
     width: 50%;
@@ -59,6 +83,21 @@ header{
     border: 1px solid gray;
     margin: 20px 25% 20px 25%;
     text-align: center;
+    padding: 10px 0;
+}
+.scoreContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.playerScore{
+    text-align: center;
+}
+
+#resetScore{
+    display: block;
+    margin: 0 auto;
 }
 
 @media screen and (min-width:400px) {
@@ -68,4 +107,20 @@ header{
         grid-template-rows: repeat(3, 100px);
 
     }
+}
+@media screen and (min-width:650px) {
+    .playerContainer{
+        width: 300px;
+
+    }
+}
+@media screen and (min-width:900px) {
+  .inputName, .submitButton{
+      width: 270px;
+      display: block;
+      margin: 0 auto;
+  }
+  .submitButton{
+      margin: 20px auto;
+  }
 }
